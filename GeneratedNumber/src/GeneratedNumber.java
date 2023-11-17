@@ -33,7 +33,6 @@ public class GeneratedNumber {
             counter--;
             input = Integer.parseInt(scanner.nextLine());
         }
-
         if (input == computerRandom) {
             System.out.printf("Your number %d is equal to random generated  number %d!%n", input, computerRandom);
             System.out.println("You win!");
