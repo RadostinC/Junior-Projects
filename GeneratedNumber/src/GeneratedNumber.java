@@ -14,14 +14,15 @@ public class GeneratedNumber {
         int computerRandom = random.nextInt(1, 10);
         int counter=3;
 
+
         while (input != computerRandom) {
 
 
-            if (input<1) {// не трябва да е по-малко  от 0
+            if (input<1||input>10) {// не трябва да е по-малко  от 0
                 System.out.println("Please, type number between 1 and 10");
                 counter++;
             }
-            if (input != computerRandom && input > 0&&input<10) {
+            if ( input>=1&&input<=10) {
                 if (counter==1){
                     System.out.println("You have no more chances!");
                     System.out.println("You lose!");
