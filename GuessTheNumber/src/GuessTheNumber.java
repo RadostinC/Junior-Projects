@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class GeneratedNumber {
+public class GuessTheNumber {
     public static void main(String[] args) {
         System.out.println("Welcome to my game! ");
         System.out.println("Choose number between 1 and 10");
@@ -29,7 +29,8 @@ public class GeneratedNumber {
                     break;
                 }
                 System.out.println("You lose! ");
-                System.out.println("Try again!");
+                System.out.printf("You have only %d times%n",counter-1);
+                System.out.println("Enter your guess:");
             }
             counter--;
             input = Integer.parseInt(scanner.nextLine());
